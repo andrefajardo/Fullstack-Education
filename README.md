@@ -13,4 +13,5 @@
 ## 1 - WarmUp (Ambientação)
 Destinada ao nivelamento e preparação para as etapas posteriores. Na primeira semana, a qual contemplou os exercícios iniciais, focou na apresentação do Git e GitHub, Trello e conceitos básicos.
 
-Teste de uso de branches
+Práticas:
+* Teste de criação e uso de branches
