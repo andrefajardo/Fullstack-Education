@@ -17,4 +17,5 @@ Práticas:
 * Uso dos principais comandos Git;
 * Teste de criação e uso de branches;
 * Testes envolvendo a integração com o GitHub;
+* Teste de geração de conflitos;
 * Apresentação da ferramenta Trello.
