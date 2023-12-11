@@ -16,4 +16,5 @@ Destinada ao nivelamento e preparação para as etapas posteriores. Na primeira 
 Práticas:
 * Uso dos principais comandos Git;
 * Teste de criação e uso de branches;
-* Testes envolvendo a integração com o GitHub.
+* Testes envolvendo a integração com o GitHub;
+* Apresentação da ferramenta Trello.
