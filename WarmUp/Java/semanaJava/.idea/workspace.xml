@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aa6b302-c872-448e-93ef-15868010223d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../ex006/helloWorld/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex006/helloWorld/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex006/helloWorld/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex006/helloWorld/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex006/helloWorld/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex006/helloWorld/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex006/helloWorld/helloWorld.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex006/helloWorld/out/production/helloWorld/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ex006/helloWorld/src/Main.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ferraduras/Ferraduras.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sensorVelocidade/SensorVelocidade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sucessorAntecessor/SucessorAntecessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,20 +30,60 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Desenvolvimento/Projetos/Fullstack-v2/Fullstack-Education/WarmUp/Java/semanaJava/src/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Desenvolvimento/Projetos/Fullstack-v2/Fullstack-Education/WarmUp/Java/semanaJava",
+    "onboarding.tips.debug.path": "D:/Desenvolvimento/Projetos/Fullstack-v2/Fullstack-Education/WarmUp/Java/semanaJava/src/Main.java"
   }
-}</component>
-  <component name="RunManager" selected="Application.salarios">
+}]]></component>
+  <component name="RunManager" selected="Application.SensorVelocidade">
     <configuration name="CalculaArea" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="calculaArea.CalculaArea" />
       <module name="semanaJava" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="calculaArea.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ferraduras" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ferraduras.Ferraduras" />
+      <module name="semanaJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ferraduras.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SensorVelocidade" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sensorVelocidade.SensorVelocidade" />
+      <module name="semanaJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sensorVelocidade.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SucessorAntecessor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sucessorAntecessor.SucessorAntecessor" />
+      <module name="semanaJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sucessorAntecessor.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,6 +106,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SensorVelocidade" />
+        <item itemvalue="Application.SucessorAntecessor" />
+        <item itemvalue="Application.Ferraduras" />
         <item itemvalue="Application.salarios" />
         <item itemvalue="Application.CalculaArea" />
       </list>
@@ -98,7 +136,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="development" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
