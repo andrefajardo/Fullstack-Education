@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aa6b302-c872-448e-93ef-15868010223d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ferraduras/Ferraduras.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sensorVelocidade/SensorVelocidade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sucessorAntecessor/SucessorAntecessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1aa6b302-c872-448e-93ef-15868010223d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../../.." value="development" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="2ZXEu9uUWEx51yH74ofDm5bFAoX" />
@@ -30,14 +30,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Desenvolvimento/Projetos/Fullstack-v2/Fullstack-Education/WarmUp/Java/semanaJava",
-    "onboarding.tips.debug.path": "D:/Desenvolvimento/Projetos/Fullstack-v2/Fullstack-Education/WarmUp/Java/semanaJava/src/Main.java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Desenvolvimento/Projetos/Fullstack-v2/Fullstack-Education/WarmUp/Java/semanaJava&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Desenvolvimento/Projetos/Fullstack-v2/Fullstack-Education/WarmUp/Java/semanaJava/src/Main.java&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.SensorVelocidade">
     <configuration name="CalculaArea" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="calculaArea.CalculaArea" />
