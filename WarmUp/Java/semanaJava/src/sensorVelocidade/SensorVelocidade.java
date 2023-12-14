@@ -11,6 +11,7 @@ public class SensorVelocidade {
         double vTempo = sTempo.nextDouble();
         double vVelMedia = (vDistancia/vTempo) * 3.6;
         System.out.println("Sua velocidade média foi de: " + vVelMedia + "km/h");
+        System.out.println("Develop");
     }
 }
 
