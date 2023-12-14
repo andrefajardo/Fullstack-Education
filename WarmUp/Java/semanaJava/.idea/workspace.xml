@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aa6b302-c872-448e-93ef-15868010223d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/calculaArea/CalculaArea.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/salarios/salarios.java" afterDir="false" />
-    </list>
+    <list default="true" id="1aa6b302-c872-448e-93ef-15868010223d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +29,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Desenvolvimento/Projetos/Fullstack-v2/Fullstack-Education/WarmUp/Java/semanaJava",
     "onboarding.tips.debug.path": "D:/Desenvolvimento/Projetos/Fullstack-v2/Fullstack-Education/WarmUp/Java/semanaJava/src/Main.java"
   }
 }]]></component>
