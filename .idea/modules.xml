@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Fullstack-Education.iml" filepath="$PROJECT_DIR$/.idea/Fullstack-Education.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WarmUp/Java/WarmUp.iml" filepath="$PROJECT_DIR$/WarmUp/Java/WarmUp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WarmUp/ex005/calculadora/calculadora.iml" filepath="$PROJECT_DIR$/WarmUp/ex005/calculadora/calculadora.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WarmUp/ex005/imcCalculo/imcCalculo.iml" filepath="$PROJECT_DIR$/WarmUp/ex005/imcCalculo/imcCalculo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WarmUp/ex005/jogoForca/jogoForca.iml" filepath="$PROJECT_DIR$/WarmUp/ex005/jogoForca/jogoForca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WarmUp/ex005/listaTarefa/listaTarefa.iml" filepath="$PROJECT_DIR$/WarmUp/ex005/listaTarefa/listaTarefa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WarmUp/ex005/simuladorBanco/simuladorBanco.iml" filepath="$PROJECT_DIR$/WarmUp/ex005/simuladorBanco/simuladorBanco.iml" />
+    </modules>
+  </component>
+</project>
