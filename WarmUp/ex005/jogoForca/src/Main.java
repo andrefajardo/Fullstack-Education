@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
-import java.util.random.RandomGenerator;
 
 public class Main {
 
@@ -28,7 +27,6 @@ public class Main {
         Palavra forca = new Palavra();
         String[] resposta = forca.forca(palavras[escolha]);
         int tamanho = resposta.length;
-        //System.out.println(Arrays.toString(resposta));
         System.out.println("\n----- DESCUBRA A PALAVRA COM 5 TENTATIVAS -----\n");
         for (int c=0; c<5; c++ ) {
             Scanner entrada = new Scanner(System.in);
