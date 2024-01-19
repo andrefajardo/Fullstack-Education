@@ -18,4 +18,7 @@ Práticas:
 * Teste de criação e uso de branches;
 * Testes envolvendo a integração com o GitHub;
 * Teste de detecção de conflito;
-* Apresentação da ferramenta Trello.
+* Apresentação da ferramenta Trello;
+* Apresentação da linguagem Java;
+* Criação de aplicações simples em Java;
+* Criação de plano de estudo e trabalho.
