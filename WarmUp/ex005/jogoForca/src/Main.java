@@ -51,7 +51,7 @@ public class Main {
         res = entrada.nextLine();
         String[] palavra = res.split("");
         if (Arrays.equals(palavra, resposta))
-            System.out.println("ACERTOU!");
+            System.out.println("PARABÉNS, ACERTOU!");
         else
             System.out.println("ERROU!");
     }
