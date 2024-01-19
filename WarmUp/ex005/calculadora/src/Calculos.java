@@ -19,7 +19,7 @@ public class Calculos {
                     resultado = num1 / num2;
                     System.out.println("Resultado: " + resultado);
                 } else {
-                    System.out.println("ERRO: Divisão por zero.");
+                    System.out.println("ERRO: Divisão de por zero.");
                 }
                 break;
             default:
