@@ -1,4 +1,4 @@
-# Fullstack-Education
+# Fullstack-Education [WarmUp]
  Arquivos inerentes à capacitação Fullstack Sesi Senai 2023/2024.
 
  A capacitação conterá as seguintes estapas:
