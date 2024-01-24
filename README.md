@@ -19,3 +19,11 @@ Práticas:
 * Testes envolvendo a integração com o GitHub;
 * Teste de detecção de conflito;
 * Apresentação da ferramenta Trello.
+* Apresentação da linguagem Java;
+* Criação de aplicações simples em Java;
+* Criação de plano de estudo e trabalho.
+## 2 - Módulo 1 (Backend)
+Atividades relativas ao desenvolvimento Backend. Serão apresentadas e utilizadas as seguintes tecnologias: Java, Spring e Hibernate.
+
+Práticas:
+* Conceitos iniciais;
