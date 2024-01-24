@@ -11,19 +11,11 @@
 003 | Módulo-3 | Fullstack
 
 ## 1 - WarmUp (Ambientação)
-Destinada ao nivelamento e preparação para as etapas posteriores. Na primeira semana, a qual contemplou os exercícios iniciais, focou na apresentação do Git e GitHub, Trello e conceitos básicos.
+Etapa destinada ao nivelamento e preparação para as fases posteriores. Na primeira semana, a qual contemplou os exercícios iniciais, focou na apresentação do Git e GitHub, Trello e conceitos básicos. Já na segunda semana, houve uma apresentação da linguagem Java, com algumas atividades de fixação.
 
 Práticas:
 * Uso dos principais comandos Git;
 * Teste de criação e uso de branches;
 * Testes envolvendo a integração com o GitHub;
 * Teste de detecção de conflito;
-* Apresentação da ferramenta Trello.
-* Apresentação da linguagem Java;
-* Criação de aplicações simples em Java;
-* Criação de plano de estudo e trabalho.
-## 2 - Módulo 1 (Backend)
-Atividades relativas ao desenvolvimento Backend. Serão apresentadas e utilizadas as seguintes tecnologias: Java, Spring e Hibernate.
 
-Práticas:
-* Conceitos iniciais;
