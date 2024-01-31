@@ -20,9 +20,9 @@ public class Listagem {
 
         ArrayList<String> cursos = setupCursos();
         ArrayList<String> professores = setupProfessores();
-        //ArrayList<String> statusCurso = setupStatus();
+        ArrayList<String> status = setupStatus();
 
-        menu(entrada, cursos, professores);
+        menu(entrada, cursos, professores, status);
 
     }
 
@@ -49,6 +49,17 @@ public class Listagem {
         return professores;
     }
 
+    public static ArrayList<String> setupStatus() {
+        ArrayList<String> status = new ArrayList<>();
+
+        status.add("Aberto");
+        status.add("Aberto");
+        status.add("Concluído");
+        status.add("Concluído");
+
+        return  status;
+    }
+
     public static void msgErro() {
         System.out.print("=======================================================\n");
         System.out.print("=====                Opção INVÁLIDA!              =====\n");
@@ -56,7 +67,7 @@ public class Listagem {
 
     }
 
-    public static void menu(Scanner entrada, ArrayList cursos, ArrayList professores) {
+    public static void menu(Scanner entrada, ArrayList cursos, ArrayList professores, ArrayList status) {
 
         SAIR_DO_LOOP:
         do {
@@ -74,22 +85,25 @@ public class Listagem {
             System.out.print("===== Opção: ");
             String opcao = entrada.next();
 
+            // Consumir "ENTER" perdido
+            entrada.nextLine();
+
             switch (opcao) {
                 case "s":{
                     entrada.close();
                     break SAIR_DO_LOOP; // Label que aponta para a sua referência ("mesmo_nome:") no ponto exterior do loop "Do While".
                 }
                 case "a": {
-                    adicionar(entrada, cursos, professores);
-                    listar(cursos, professores);
+                    adicionar(entrada, cursos, professores, status);
+                    listarTodos(cursos, professores, status);
                     break;
                 }
                 case "r": {
-                    remover(entrada, cursos, professores);
+                    remover(entrada, cursos, professores, status);
                     break;
                 }
                 case "l": {
-                    listar(cursos, professores);
+                    listar(cursos, professores, status);
                     break ;
                 }
                 default:{
@@ -101,7 +115,7 @@ public class Listagem {
     }
 
     // ============================== SEÇÃO DE SETUP - FIM =================================//
-    public static void listar(ArrayList cursos, ArrayList professores) {
+    public static void listar(ArrayList cursos, ArrayList professores, ArrayList status) {
         Scanner entrada = new Scanner(System.in);
         System.out.println("=======================================================");
         System.out.println("=====   (t) para todos                            =====");
@@ -110,36 +124,28 @@ public class Listagem {
         System.out.print("===== Opção: ");
         String op = entrada.next();
         if (op.equals("t")) {
-            for (int i = 0; i < cursos.size(); i++) {
-                String itemCurso = cursos.get(i).toString();
-                String itemProf = professores.get(i).toString();
-                System.out.println(i + " - " + itemCurso + " - " + itemProf + " ===> " );
-            }
+            listarTodos(cursos, professores, status);
         } else if (op.equals("c")) {
-            for (int i = 0; i < cursos.size(); i++) {
-                String item = cursos.get(i).toString();
-                System.out.print(i + " - " + item + " - ");
-                item = professores.get(i).toString();
-                System.out.println(item);
-            }
+            listarConcluidos(cursos, professores, status);
         } else {
             msgErro();
         }
     }
 
-    public static void adicionar(Scanner entrada, ArrayList cursos, ArrayList professores) {
-        Scanner teste = new Scanner(System.in);
+    public static void adicionar(Scanner entrada, ArrayList cursos, ArrayList professores, ArrayList status) {
+        //Scanner teste = new Scanner(System.in);
         System.out.print("Informe o curso: ");
-        String itemCurso = teste.nextLine();
+        String itemCurso = entrada.nextLine();
         System.out.print("Informe o Professor: ");
-        String itemProf = teste.nextLine();
+        String itemProf = entrada.nextLine();
+        status.add("Aberto");
         cursos.add(itemCurso);
         professores.add(itemProf);
     }
 
-    public static void remover(Scanner entrada, ArrayList cursos, ArrayList professores) {
+    public static void remover(Scanner entrada, ArrayList cursos, ArrayList professores, ArrayList status) {
         System.out.print("\nLista atual: \n");
-        listar(cursos, professores);
+        listar(cursos, professores, status);
         System.out.print("Informe o indice para remoção: ");
         int indice = entrada.nextInt();
         if (cursos.size() > indice){
@@ -151,6 +157,26 @@ public class Listagem {
             }
         } else {
             msgErro();
+        }
+    }
+
+    public static void listarTodos(ArrayList cursos, ArrayList professores, ArrayList status) {
+        for (int i = 0; i < cursos.size(); i++) {
+            String itemCurso = cursos.get(i).toString();
+            String itemProf = professores.get(i).toString();
+            String itemStatus = status.get(i).toString();
+            System.out.println(i + " - " + itemCurso + " - " + itemProf + " ===> " + itemStatus);
+        }
+    }
+
+    public static void listarConcluidos(ArrayList cursos, ArrayList professores, ArrayList status) {
+        for (int i = 0; i < status.size(); i++) {
+            String itemStatus = status.get(i).toString();
+            if (itemStatus.equals("Concluído")) {
+                String itemCurso = cursos.get(i).toString();
+                String itemProf = professores.get(i).toString();
+                System.out.println(i + " - " + itemCurso + " - " + itemProf + " ===> " + itemStatus);
+            }
         }
     }
 }
