@@ -128,11 +128,11 @@ public class Listagem {
     }
 
     public static void adicionar(Scanner entrada, ArrayList cursos, ArrayList professores) {
-        //Scanner teste = new Scanner(System.in);
+        Scanner teste = new Scanner(System.in);
         System.out.print("Informe o curso: ");
-        String itemCurso = entrada.nextLine();
+        String itemCurso = teste.nextLine();
         System.out.print("Informe o Professor: ");
-        String itemProf = entrada.nextLine();
+        String itemProf = teste.nextLine();
         cursos.add(itemCurso);
         professores.add(itemProf);
     }
