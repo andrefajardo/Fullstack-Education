@@ -52,4 +52,3 @@ public class Jogador {
         return numeroTentativas;
     }
 }
-
