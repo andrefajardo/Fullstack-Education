@@ -1,4 +1,4 @@
-public class jogador {
+public class Jogador {
     private String nome;
     private int idade;
     private int pontuacao;
