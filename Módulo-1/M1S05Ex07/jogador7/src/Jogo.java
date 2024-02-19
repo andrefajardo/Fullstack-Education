@@ -60,13 +60,14 @@ public class Jogo {
     }
 
     public void jogar(int jogador, ArrayList<Jogador> ranking, int limite) {
-        int numeroOculto = rand.nextInt(10);
         Scanner entrada = new Scanner(System.in);
-        int chances = 10;
-
+        Mensagens.DificuldadeJogo();
+        int dificult = entrada.nextInt();
+        int numeroOculto = rand.nextInt(10 * dificult);
+        int chances = dificult * 3;
 
         while (chances > 0) {
-            Mensagens.menuJogoAdivinhaNumero(chances);
+            Mensagens.menuJogoAdivinhaNumero(chances, dificult);
             int chute = entrada.nextInt();
             chances--;
 
