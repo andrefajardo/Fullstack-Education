@@ -37,6 +37,16 @@ public class Mensagens {
         return true;
     }
 
+    public static boolean DificuldadeJogo() {
+        System.out.print("=======================================================\n");
+        System.out.print("==          Informe o nível de dificuldade!          ==\n");
+        System.out.println("=====   (1) para fácil                           =====");
+        System.out.println("=====   (2) para intermediário                   =====");
+        System.out.println("=====   (3) para difícil                         =====");
+        System.out.print("=======================================================\n");
+        return true;
+    }
+
     public static void mensaoHonrosa(ArrayList<Jogador> ranking)  {
         for (int c = 0; c < ranking.size(); c++) {
             if (ranking.get(c).isOnLine()) {
@@ -75,11 +85,11 @@ public class Mensagens {
         System.out.println("=======================================================");
     }
 
-    public static void menuJogoAdivinhaNumero(int chances) {
-        System.out.println("\n=======================================================");
-        System.out.println("=====            Adivinhe o número oculto         =====");
-        System.out.println("=====    de 0 a 100. Você tem " + chances + " tentativa(s)      =====");
-        System.out.println("=======================================================");
+    public static void menuJogoAdivinhaNumero(int chances, int dificult) {
+        System.out.println("\n===============================================================");
+        System.out.println("=====        Adivinhe o número oculto de 0 a "+ dificult *10+"           =====");
+        System.out.println("=====        Você tem " + chances + " tentativa(s) para acertar         =====");
+        System.out.println("===============================================================");
         System.out.print("Escolha um número: ");
     }
 }
