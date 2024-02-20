@@ -75,7 +75,9 @@ public class Main {
                 case "s":{
                     entrada.close();
                     int onLine = verificaOnLine(ranking);
-                    ranking.get(onLine).setOnLine(false);
+                    if (onLine != -1) {
+                        ranking.get(onLine).setOnLine(false);
+                    }
                     break SAIR_DO_LOOP; // Label que aponta para a sua referência ("mesmo_nome:") no ponto exterior do loop "Do While".
                 }
                 case "c": {
