@@ -1,27 +1,30 @@
 package com.senai.biblioteca.entities;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
-import lombok.Data;
+import jakarta.persistence.*;
+import lombok.*;
+
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "emprestimo")
 @Data
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class EmprestimoEntity {
 
 
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     private LivroEntity livro;
-    @ManyToOne
+    @ManyToOne(optional = false)
     private MembroEntity membro;
     private LocalDate dataEmprestimo;
     private LocalDate dataDevolucao;
 }
-
