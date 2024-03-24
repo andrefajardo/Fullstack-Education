@@ -21,4 +21,13 @@ public class BibliotecarioService {
     public List<BibliotecarioEntity> listarTodos () {
         return bibliotecarioRepository.findAll();
     }
+
+    public BibliotecarioEntity buscarPorId(Long id) throws Exception {
+        return bibliotecarioRepository.findById(id).orElseThrow(() -> new Exception("Bibliotecário não encontrado"));
+    }
+
+    public void apagar(Long id) throws Exception {
+        BibliotecarioEntity entity = buscarPorId(id);
+        bibliotecarioRepository.delete(entity);
+    }
 }

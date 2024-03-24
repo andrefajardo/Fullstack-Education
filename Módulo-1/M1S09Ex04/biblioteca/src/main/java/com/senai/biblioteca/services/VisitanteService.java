@@ -21,4 +21,11 @@ public class VisitanteService {
     public List<VisitanteEntity> listarTodos () {
         return visitanteRepository.findAll();
     }
+    public VisitanteEntity buscarPorId(Long id) throws Exception {
+        return visitanteRepository.findById(id).orElseThrow(() -> new Exception("Visitante não encontrado"));
+    }
+    public void apagar(Long id) throws Exception {
+        VisitanteEntity entity = buscarPorId(id);
+        visitanteRepository.delete(entity);
+    }
 }

@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.io.Serializable;
+import java.util.List;
 
 @Table(name="livro")
 @Entity
@@ -13,14 +14,16 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+
 public class LivroEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nome;
+    @OneToMany(mappedBy = "livro", fetch = FetchType.EAGER)
+    private List<EmprestimoEntity> emprestimo;
+    private String titulo;
     private String autor;
-    @Column(name = "ano_publicacao")
     private Integer anoPublicacao;
 
 }

@@ -2,7 +2,9 @@ package com.senai.biblioteca.controller;
 
 import com.senai.biblioteca.entities.BibliotecarioEntity;
 import com.senai.biblioteca.services.BibliotecarioService;
+import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -22,5 +24,13 @@ public class BibliotecarioController {
     public List<BibliotecarioEntity> get() {
         return bibliotecarioService.listarTodos();
     }
-
+    @GetMapping("{id}")
+    public BibliotecarioEntity getId(@PathVariable Long id) throws Exception {
+        return bibliotecarioService.buscarPorId(id);
+    }
+    @DeleteMapping("{id}")
+    public ResponseEntity<Void> apagar(@PathVariable Long id) throws Exception {
+        bibliotecarioService.apagar(id);
+        return ResponseEntity.noContent().build();
+    }
 }
