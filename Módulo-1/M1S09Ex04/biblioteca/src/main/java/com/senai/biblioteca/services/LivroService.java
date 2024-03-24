@@ -22,4 +22,13 @@ public class LivroService {
     public List<LivroEntity> listarTodos() {
         return livroRepository.findAll();
     }
+
+    public LivroEntity buscarPorId(Long id) throws Exception {
+        return livroRepository.findById(id).orElseThrow(() -> new Exception("Livro não encontrado"));
+    }
+
+    public void apagar(Long id) throws Exception {
+        LivroEntity entity = buscarPorId(id);
+        livroRepository.delete(entity);
+    }
 }

@@ -19,6 +19,6 @@ public class VisitanteEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    private Integer telefone;
+    private String telefone;
 
 }
