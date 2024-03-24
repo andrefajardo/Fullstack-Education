@@ -1,31 +1,35 @@
 package com.senai.biblioteca.entities;
 
-
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;
-
+import java.io.Serializable;
 import java.time.LocalDate;
 
+
 @Entity
-@Table(name = "emprestimo")
 @Data
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class EmprestimoEntity {
-
+@Table(name = "emprestimo")
+public class EmprestimoEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-
-    @ManyToOne(optional = false)
+    @JsonIgnoreProperties({"emprestimo"})
+    @ManyToOne(optional = false, fetch = FetchType.EAGER, cascade = CascadeType.DETACH)
+    @JoinColumn(name = "livro_id", nullable = false)
     private LivroEntity livro;
-    @ManyToOne(optional = false)
+    @JsonIgnoreProperties({"emprestimo"})
+    @ManyToOne(optional = false, fetch = FetchType.EAGER, cascade = CascadeType.DETACH)
+    @JoinColumn(name = "membro_id", nullable = true)
     private MembroEntity membro;
     private LocalDate dataEmprestimo;
     private LocalDate dataDevolucao;
+
 }
 
