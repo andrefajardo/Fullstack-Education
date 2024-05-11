@@ -14,7 +14,7 @@ public class MaterialEntity {
 
     @ManyToOne
     @JoinColumn(name = "agenda_id", nullable = false)
-    private AgendaEntity agenda;
+    private AgendamentoEntity agenda;
 
     private String descricao;
 

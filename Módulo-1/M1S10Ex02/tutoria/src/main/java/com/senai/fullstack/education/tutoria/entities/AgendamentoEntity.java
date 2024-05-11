@@ -5,12 +5,11 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 @Entity
-@Table(name = "agendas")
+@Table(name = "agendamentos")
 @Data
-public class AgendaEntity {
+public class AgendamentoEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

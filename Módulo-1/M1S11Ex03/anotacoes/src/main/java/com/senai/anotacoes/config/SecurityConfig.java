@@ -1,13 +1,12 @@
-package com.senai.anotacoes.infra;
+package com.senai.anotacoes.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.Customizer;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
-import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
@@ -19,14 +18,13 @@ public class SecurityConfig {
 
         http.authorizeHttpRequests(
             authorizeConfig -> {
-                authorizeConfig.requestMatchers("/public").permitAll();
-                authorizeConfig.requestMatchers("/logout").permitAll();
+                authorizeConfig.requestMatchers("/test").permitAll();
                 authorizeConfig.anyRequest().authenticated();
             });
 
         //http.formLogin(Customizer.withDefaults());
+        //http.csrf(csrf -> csrf.disable());
         http.csrf(AbstractHttpConfigurer::disable);
-
         //http.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 
         return http.build();
