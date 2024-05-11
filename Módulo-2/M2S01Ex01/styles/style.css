@@ -1,0 +1,114 @@
+/* Definindo o conjunto de caracteres */
+@charset "UTF-8";
+
+/* Definindo variáveis no CSS */
+:root {
+    --laranja : #fca211;
+    --azul : #14213d;
+    --branco : #ffffff;
+    --fundo : #fef7ec;
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+/* Dando um reset nas pré-definições existentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color:var(--branco);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(180deg, var(--laranja), var(--branco));
+    font-family: var(--fonte-padrao);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;    
+}
+
+#id_nav {
+    background-color: var(--azul);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.491);
+}
+
+#id_nav > a {
+    color: var(--branco);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;  
+    transition-duration: 0.5s;  
+}
+
+#id_nav > a:hover {
+    background-color: var(--laranja);
+    color: var(--azul);
+}
+
+main {
+    background-color: var(--fundo);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 280px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.434);
+}
+main.cl_quiz {
+    background-color: var(--fundo);
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 280px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.434);
+}
+
+main > h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+main > p {
+    text-align: justify;
+}
+
+main.cl_name > form{
+
+}
+
+form > p {
+    margin-bottom: 0.3em;
+}
+
+form > p > span.sp_quiz {
+    display:flex;
+    flex-direction: row;
+}
+
+#id_div_form {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+input.cl_name {
+    max-width: 15em;
+}
