@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabQuiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>LabQuiz - Tecnologias HTML e CSS</h1>
+    </header>
+    <nav id="id_nav">
+        <a href="./index.html">Home</a>
+        <a href="./labQuiz.html">Quiz</a>
+    </nav>
+    <main class="cl_quiz">
+        <h2>
+            Questionário
+        </h2>
+        <form>
+            <p> 
+                <span class="sp_quiz">
+                    1)
+                    <label for="id_quiz_01">Como se define um estilo inline em HTML?</label>
+                </span>
+                <input type="text" name="quiz01" class="cl_quiz" id_quiz01">
+            </p>
+
+            <p>
+                <span class="sp_quiz">2) Qual é a tag usada para criar uma lista ordenada em HTML?</span> 
+                <input type="radio" name="quiz02" class="cl_quiz" id_opt2-01">         
+                <label for="id_opt2-01">ol</label>
+                <input type="radio" name="quiz02" class="cl_quiz" id_opt2-02">
+                <label for="id_opt2-02">ul</label>
+                <input type="radio" name="quiz02" class="cl_quiz" id_opt2-03">
+                <label for="id_opt2-03">li</label>
+                <input type="radio" name="quiz02" class="cl_quiz" id_opt2-04">
+                <label for="id_opt2-04">order-list</label>
+ 
+            </p>
+            
+            <p>
+                <span class="sp_quiz">3) Qual propriedade CSS é usada para alterar a cor do texto?</span>
+                <select name="quiz03" id="id_quiz03">
+                    <option value="00">Selecione uma opção...</option>
+                    <option value="01">font-color</option>
+                    <option value="02">color</option>
+                    <option value="03">background-color</option>
+                    <option value="04">text-color</option>
+                </select>
+               
+            </p>
+            
+            <p>
+                <span class="sp_quiz">
+                    4)
+                    <label for="id_quiz04">Como se referencia um arquivo CSS externo em um documento HTML?</label>
+                </span>
+                <input type="text" name="quiz04" class="cl_quiz" id_quiz04">
+            </p>
+           
+            <p>
+                <span class="sp_quiz">5) Font-size é a propriedade CSS usada para alterar o tamanho da fonte de um texto?</span>
+                <input type="radio" name="quiz05" class="cl_quiz" id_opt5-01">         
+                <label for="id_opt01">Sim</label>
+                <input type="radio" name="quiz05" class="cl_quiz" id_opt5-02">
+                <label for="id_opt02">Não</label>
+            </p>
+            
+            <p>
+                <span class="sp_quiz">6) Qual é a propriedade CSS usada para definir a largura de um elemento?</span>
+                <input type="radio" name="quiz06" class="cl_quiz" id_opt6-01">         
+                <label for="id_opt6-01">height</label>
+                <input type="radio" name="quiz06" class="cl_quiz" id_opt6-02">
+                <label for="id_opt6-02">size</label>
+                <input type="radio" name="quiz06" class="cl_quiz" id_opt6-03">
+                <label for="id_opt6-03">width</label>
+                <input type="radio" name="quiz06" class="cl_quiz" id_opt6-04">
+                <label for="id_opt6-04">max-width</label>
+            </p>
+
+            <p>
+                <span class="sp_quiz">7) Como se cria um comentário em CSS?</span>
+                <select name="quiz07" id="id_quiz07">
+                    <option value="00">Selecione uma opção...</option>
+                    <option value="01">&lt;!-- --&gt;</option>
+                    <option value="02">//</option>
+                    <option value="03">/* */</option>
+                </select>
+            </p> 
+
+            <p>
+                <span class="sp_quiz">8) Qual é a propriedade CSS usada para definir a altura de um elemento?</span>
+                <input type="radio" name="quiz08" class="cl_quiz" id_opt8-01">         
+                <label for="id_opt8-01">height</label>
+                <input type="radio" name="quiz08" class="cl_quiz" id_opt8-02">
+                <label for="id_opt8-02">size</label>
+                <input type="radio" name="quiz08" class="cl_quiz" id_opt8-03">
+                <label for="id_opt8-03">min-height</label>
+                <input type="radio" name="quiz08" class="cl_quiz" id_opt8-04">
+                <label for="id_opt8-04">max-width</label>               
+            </p>
+
+        </form> 
+    </main>
+    <footer>
+        <p>
+            Site criado por <a href="https://github.com/andrefajardo" target="_blank">André Fajardo</a> para o projeto
+            <a href="https://floripamaistec.pmf.sc.gov.br/" target="_blank">Floripa Mais Tec</a>.
+        </p>
+    </footer>
+    <script src="./scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
