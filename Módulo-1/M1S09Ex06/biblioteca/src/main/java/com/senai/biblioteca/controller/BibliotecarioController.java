@@ -41,4 +41,5 @@ public class BibliotecarioController {
         bibliotecarioService.updateBibliotecario(id, nome);
         return ResponseEntity.noContent().build();
     }
+
 }
