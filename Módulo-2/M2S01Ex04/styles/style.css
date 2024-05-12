@@ -90,10 +90,6 @@ main > p {
     text-align: justify;
 }
 
-main.cl_name > form{
-
-}
-
 form > p {
     margin-bottom: 0.3em;
 }
