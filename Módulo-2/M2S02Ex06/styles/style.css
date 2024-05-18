@@ -1,0 +1,173 @@
+/* Definindo o conjunto de caracteres */
+@charset "UTF-8";
+
+/* Definindo variáveis no CSS */
+:root {
+    --laranja : #fca211;
+    --azul : #14213d;
+    --branco : #ffffff;
+}
+
+/* Dando um reset nas pré-definições existentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#id_link-home {
+    position: fixed;     /* Definindo que elemento fique fixo */
+    z-index: 100;        /* Definindo que elemento se sobreponha aos outros */   
+    right: 20px;         /* Definindo a posição em que aparecerá na tela  */
+    bottom: 50px;        /* Definindo a posição em que aparecerá na tela  */
+    font-size: 3em; 
+    color: var(--laranja);
+    background-color: var(--branco);
+    border-radius: 50%;
+}
+
+.c_titulo {
+    font-size: 3em;
+    color: var(--laranja);
+}
+
+.c_subtitulo {
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+#id_header {
+    position: fixed;
+    width: 100vw;
+    height: 3em;
+    background-color: var(--azul);
+}
+
+#id_header a {
+    color: var(--laranja);
+    padding: 0 1em;
+}
+
+#id_header a:hover {
+    border-bottom: 2px solid var(--branco);
+}
+
+#id_home h2 {
+    color: var(--branco);
+}
+
+#id_menu_header {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#id_home {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    padding: 0 4em;
+    background-image: url("../assets/images/imagem_home.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#id_sobre {
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em;
+    background-image: url("../assets/images/imagem_sobre.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#id_sobre p {
+    text-align: justify;
+}
+
+#id_dados_contato {
+    width: 100vw;
+    min-height: 50vh;
+    background-color: var(--azul);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4em;
+}
+
+#id_dados_contato a {
+    color: var(--branco);
+}
+
+#id_dados_contato ul {
+    list-style: none;
+    font-size: 1.2em;
+}
+
+#id_dados_contato i {
+    padding: .5em;
+}
+
+#id_formacoes {
+    width: 100vw;
+    min-height: 50vh;
+    padding: 4em;
+}
+
+.c_formacoes {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2em;
+    flex-wrap: wrap;
+}
+
+.c_outros > li {
+    margin-top: 1em;
+}
+
+#id_formacoes li {
+    padding-right: 6em;    
+}
+
+#id_experiencias ol > li {
+    margin-top: 1em;   
+}
+
+#id_experiencias {
+    width: 100vw;
+    min-height: 50vh;
+    padding: 4em;
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+.c_interna {
+    margin-left: 2em;
+}
+
+#id_footer {
+    width: 100vw;
+    background-color: var(--laranja);
+    display: flex;
+    padding: 1em 4em;
+    justify-content: space-between;
+}
+
+#id_footer a {
+    color: var(--azul);
+    padding-right: 2em;
+}
