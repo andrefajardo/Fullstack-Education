@@ -1,0 +1,48 @@
+/* Definindo o conjunto de caracteres */
+@charset "UTF-8";
+
+/* Definindo variáveis no CSS */
+:root {
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+/* Dando um reset nas pré-definições existentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+main {
+    background-color: white;
+    max-width: 70%;
+    margin: auto;
+    padding: 1.2em;
+}
+
+div {
+    margin: 0.5em 0em;
+}
+
+#id_cabecalho_notas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
