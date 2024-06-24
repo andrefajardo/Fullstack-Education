@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+        <title>LabScore</title>
+        <link rel="stylesheet" href="./styles/style.css">
+      </head>
+      
+      <body>
+        <header>
+          <h1>Dados do Aluno</h1>
+        </header>
+      
+        <form id="form_cadastro">
+          <div id="cadastro-geral" class="cadastro">
+            <h2>Informações para Cadastro</h2>
+            <section class="cadastro">
+              <label for="id_nome"><strong>Informe o nome:</strong></label>
+              <input type="text" name="name" id="id_nome">
+              <label for="id_idade"><strong>Informe a idade:</strong></label>
+              <input type="text" name="age" id="id_age">
+              <label for="id_serie"><strong>Informe a série:</strong></label>
+              <input type="text" name="grade" id="id_grade">
+              <label for="id_school"><strong>Informe a escola:</strong></label>
+              <input type="text" name="school" id="id_school">
+              <label for="id_subject"><strong>Informe a matéria:</strong></label>
+              <input type="text" name="subject" id="id_subject">
+            </section>
+            <h3>Endereço:</h3>
+            <section class="endereco">
+                <label for="id_street"><strong>Rua:</strong></label>
+                <input class="endereco" type="text" name="street" id="id_street" disabled>
+                <label for="id_number"><strong>Número:</strong></label>
+                <input class="endereco" type="number" name="number" id="id_number" disabled>
+                <label for="id_zip"><strong>CEP:</strong></label>
+                <input class="endereco" type="text" name="zip" id="id_zip">
+                <label for="id_city"><strong>Cidade:</strong></label>
+                <input class="endereco" class="endereco"type="text" name="city" id="id_city" disabled>
+                <label for="id_state"><strong>Estado:</strong></label>
+                <input class="endereco" type="text" name="state" id="id_state" disabled>
+              </section>
+            <section class="controle">
+              <div class="confirmacao">
+                <button id="id_btConfirmar">Confimar</button>
+                <button id="id_btCancelar">Cancelar</button>
+              </div>              
+            </section>            
+          </div>
+        </form>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+        <script src="./src/scripts/main.js"></script>
+      </body>
+  </html>
