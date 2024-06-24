@@ -13,33 +13,16 @@
 //================= Trecho de código atendento aos requisitos do card-3 =================
 
 export function f_getData() {
-
-  let aluno = {
-    name:"",
-    age:"",
-    grade: "",
-    school:"",
-    subject:"",
-    zip:""
-  }
-
   let nameStudent = document.getElementById(`id_name`);
+  localStorage.setItem("name", nameStudent.value);
   let ageStudent = document.getElementById(`id_age`);
+  localStorage.setItem("age", ageStudent.value);
   let gradeStudent = document.getElementById(`id_grade`);
+  localStorage.setItem("grade", gradeStudent.value);
   let schoolStudent = document.getElementById(`id_school`);
+  localStorage.setItem("school", schoolStudent.value);
   let subjectStudent = document.getElementById(`id_subject`);
-  let i_zip = document.getElementById(`id_zip`);
-
-  aluno.name = nameStudent.value;
-  aluno.age = ageStudent.value;
-  aluno.grade = gradeStudent.value;
-  aluno.school = schoolStudent.value;
-  aluno.subject = subjectStudent.value;
-  aluno.zip = i_zip.value;
-  
-  const alunoJSON = JSON.stringify(aluno);
-  localStorage.setItem('aluno', alunoJSON);
-
+  localStorage.setItem("subject", subjectStudent.value);
 }
 
 export function f_getAddress () {
@@ -53,7 +36,7 @@ export function f_getAddress () {
       .then((data)=>{
         let i_street = document.getElementById(`id_street`);
         localStorage.setItem("street", data.logradouro);
-        i_street.value = localStorage.getItem("street");
+        i_street.value = localStorage.getItem("street")
         let i_city = document.getElementById(`id_city`);
         localStorage.setItem("city", data.localidade);
         i_city.value = localStorage.getItem("city");
@@ -66,37 +49,6 @@ export function f_getAddress () {
       })
   }
 }
-
-export function f_teste(){
-
-    let imprimeNomeAluno = document.getElementById('nome-aluno')
-    let imprimeidadeAluno = document.getElementById('idade-aluno')
-    let imprimeSerieAluno = document.getElementById('serie-aluno')
-    let imprimeNomeEscola = document.getElementById('escola')
-    let imprimeMateriaFavorita = document.getElementById('materia-favorita')
-
-    imprimeNomeAluno.innerText = localStorage.getItem("name");
-    imprimeidadeAluno.innerText = localStorage.getItem("age");
-    imprimeSerieAluno.innerText = localStorage.getItem("grade");
-    imprimeNomeEscola.innerText = localStorage.getItem("school");
-    imprimeMateriaFavorita.innerText = localStorage.getItem("subject");  
-  
-}
-
-export function f_preparaTela(e) {
-  e.preventDefault();
-  window.location.href = "http://127.0.0.1:5500/pages/page01.html";
-}
-
-window.addEventListener('load', function (event) {
-  if (window.location.pathname == '/pages/page01.html') {
-    f_teste();
-  }
-});
-
-
-
-
 
 
 // let imprimeNomeAluno = document.getElementById('nome-aluno')
