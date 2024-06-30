@@ -94,11 +94,6 @@ window.addEventListener('load', function (event) {
   }
 });
 
-
-
-
-
-
 // let imprimeNomeAluno = document.getElementById('nome-aluno')
 // let imprimeidadeAluno = document.getElementById('idade-aluno')
 // let imprimeSerieAluno = document.getElementById('serie-aluno')
