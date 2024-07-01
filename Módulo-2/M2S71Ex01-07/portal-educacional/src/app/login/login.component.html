@@ -1,1 +1,22 @@
-<p>login works!</p>
+<div class="login">
+  <form #formLogin="ngForm">
+    <fieldset>
+      <label for="id_email">* Email</label>
+      <input type="email" name="" id="id_email"
+      [(ngModel)] = "login.email" #email="ngModel"
+      [ngModelOptions]="{standalone: true}"
+      >
+    </fieldset>
+    <fieldset>
+      <label for="id_senha">* Senha</label>
+      <input type="password" name="" id="id_senha"
+      [(ngModel)] = "login.senha" #senha="ngModel"
+      [ngModelOptions]="{standalone: true}"
+      >
+    </fieldset>
+    <div class="botoes">
+      <button type="button" class="botao" (click)="entrar()" >Entrar</button>
+      <button type="button" class="botao" (click)="recuperar()">Esqueci a Senha</button>
+    </div>
+  </form>
+</div>
